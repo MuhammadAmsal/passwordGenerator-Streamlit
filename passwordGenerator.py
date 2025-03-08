@@ -1,7 +1,7 @@
 import streamlit as st
 import random
 import string
-import pyperclip
+# import pyperclip
 
 def generate_password(length, use_numbers, use_characters, use_alphabets):
     characters = ""
@@ -50,6 +50,6 @@ password = st.text_input("Generated Password", st.session_state.password)
 password_strength = check_password_strength(password)
 st.write(f"Password Strength: **{password_strength}**")
 
-if st.button("Copy to Clipboard"):
-    pyperclip.copy(password)
-    st.success("Password copied to clipboard!")
+# if st.button("Copy to Clipboard"):
+ #   pyperclip.copy(password)
+ #  st.success("Password copied to clipboard!")
